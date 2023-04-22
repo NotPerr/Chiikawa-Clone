@@ -1,0 +1,88 @@
+body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "vdl-v7marugothic", sans-serif;
+    font-weight: 700;
+    position: relative;
+    color: #462e31;
+    line-height: 1;
+}
+/* =================== loader =================== */
+.loader-container {
+    background-color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    z-index: 9999;
+    transition: .3s;
+}
+.loader {
+    position: absolute;
+    top: 30%;
+    left: 28%;
+}
+.loader-text-1 {
+   position: absolute;
+   top: 65%;
+   left: 67%;
+   transform: translate(-10%, 40%);
+   opacity: 0;
+   animation: pop-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) .5s forwards;
+}
+
+.loader-text-2 {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    transform: translate(10%, 10%);
+    opacity: 0;
+    animation: pop-in 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) .8s forwards;
+}
+
+@keyframes pop-in {
+    from {
+      width: 50px;
+      height: 50px;
+      opacity: 0;
+    }
+    to {
+      width: 130px;
+      height: 130px;
+      opacity: 1;
+    }
+  }
+
+  /* =================== main =================== */
+
+  .wrapper-main {
+    animation: fadeInOut 1s linear 2.01s 1 forwards;
+    background-color: #d3ecbf;
+    opacity: 0;
+  }
+  
+  .wrapper-main h1 {
+      margin-top: 0;
+      text-align: center;
+  }
+
+  @keyframes fadeInOut {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  /* =================== header =================== */
+  header {
+      z-index: 9998;
+  }
+
+  
