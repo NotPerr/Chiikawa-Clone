@@ -11,6 +11,8 @@
 
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 </head>
 <body>
     <div class="loader-container" id="loader_container">
@@ -45,7 +47,18 @@
                 </a>
             </div>
 
-            <div class="movie-container"></div>
+            <div class="video-modal" style="display: none;">
+                <div class="video-modal-content">
+                  <button class="video-modal-close">X</button>
+                  <iframe class="video-modal-iframe" src="" frameborder="0" allowfullscreen></iframe>
+                </div>
+              </div>
+            <div class="movie-container">
+                    <div class="movie-content">
+                        <div class="video-modal-trigger"></div>
+                    </div>
+                  
+            </div>
         </section>
 
         
