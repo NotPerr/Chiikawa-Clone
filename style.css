@@ -12,6 +12,7 @@ body {
     position: relative;
     color: #462e31;
     line-height: 1;
+    
 }
 
 /* =================== loader =================== */
@@ -71,6 +72,9 @@ body {
 .wrapper-main {
     animation: fadeInOut 1s linear 0s 1 forwards;
     opacity: 0;
+    position: relative;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 .wrapper-main h1 {
@@ -95,18 +99,25 @@ body {
 
 /* =================== header =================== */
 header {
-    display: block;
     position: fixed;
     z-index: 9998;
     background-color: #fff;
     font-weight: 700;
+    min-width: 100vw;
+    top: 0;
+    left: 0;
+}
+
+.header-wrapper {
+    display: flex;
+    position: relative;
     width: 100%;
 }
 
 header h1 {
     text-align: center;
     height: 60px;
-    margin: 0;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,9 +136,8 @@ header h1 img {
     background-repeat: no-repeat;
     z-index: 9999;
     background-color: #fff;
-    top: 0;
+    position: absolute;
     right: 0;
-    position: fixed;
     height: 60px;
     width: 55px;
     display: flex;
@@ -282,3 +292,98 @@ header h1 img {
 }
 
 /* =================== main =================== */
+main {
+    position: relative;
+    border-top: solid 3px #5f3e42;
+    background: url("./images/bg_03_sp.jpeg") no-repeat center ;
+    max-width: 100%;
+}
+
+.tree_sp_left_01 {
+    background: url("./images/bg_2_tree_sp_left_01.png") no-repeat left top/122px 834px;
+    position: absolute;
+    top: -37px;
+    left: 0px;
+    width: 122px;
+    height: 834px;
+}
+.tree_sp_right_01 {
+    background: url("./images/bg_2_tree_sp_right_01.png") no-repeat left top/129px 300px;
+    position: absolute;
+    top: -41px;
+    right: 0px;
+    width: 129px;
+    height: 300px;
+}
+.tree_sp_right_02 {
+    background: url("./images/bg_2_tree_sp_right_02.png") no-repeat left top/224px 5978px;
+    position: absolute;
+    top: 172px;
+    right: 0px;
+    width: 224px;
+    height: 5978px;
+    z-index: 910;
+}
+.bg_sp_chara_chiikawa3 {
+    background: url("./images/bg_chara_01.png") no-repeat left top/58px 70px;
+    z-index: 905;
+    position: absolute;
+    width: 58px;
+    height: 70px;
+    top: 178px;
+    right: 87px;
+    animation: animation-hyokkori-chiikawa .8s linear forwards, shake-chiikawa 2s ease 1s infinite normal none;
+    opacity: 1;
+}
+
+@keyframes animation-hyokkori-chiikawa {
+    0% {
+        transform: scale(.1, .1);
+    }
+    25% {
+        transform: translate(-30%, -60%) scale(1.0, 1.2);
+    }
+    40% {
+        transform: translate(-30%, -60%) scale(1.3, .8);
+    }
+    55% {
+        transform: translate(-30%, -60%) scale(1.0, 1.2);
+    }
+    70% {
+        transform: translate(-30%, -60%) scale(1.2, .9);
+    }
+    85% {
+        transform: translate(-30%, -60%) scale(1, 1.1);
+    }
+    100% {
+        transform: translate(-30%, -60%) scale(1, 1);
+    }
+}
+@keyframes shake-chiikawa {
+    0% {
+        transform-origin: 150% 150%;
+        transform: translate(-30%, -60%) rotate(0deg);
+    }
+    50% {
+        transform-origin: 150% 150%;
+        transform: translate(-30%, -60%) rotate(-7deg);
+    }
+    100% {
+        transform-origin: 150% 150%;
+        transform: translate(-30%, -60%) rotate(0deg);
+    }
+}
+
+/* =================== youtube content =================== */
+.youtube-content {
+    padding: 278px 0 80px;
+    height: 425px;
+}
+.youtube-content h2 {
+    text-align: center;
+}
+.youtube-content h2 img{
+    width: 218px;
+    height: auto;
+    vertical-align: top;
+}
