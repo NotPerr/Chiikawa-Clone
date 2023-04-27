@@ -1,10 +1,7 @@
-* {
-    box-sizing: border-box;
-}
 
 body {
     width: 100vw;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     margin: 0;
     padding: 0;
     font-family: "vdl-v7marugothic", sans-serif;
@@ -74,7 +71,6 @@ body {
     opacity: 0;
     position: relative;
     max-width: 100vw;
-    overflow: hidden;
 }
 
 .wrapper-main h1 {
@@ -376,8 +372,10 @@ main {
 
 /* =================== youtube content =================== */
 .youtube-content {
-    padding: 278px 0 80px;
+    padding: 230px 0 80px;
     height: 425px;
+    z-index: 915;
+    position: relative;
 }
 .youtube-content h2 {
     text-align: center;
@@ -386,4 +384,115 @@ main {
     width: 218px;
     height: auto;
     vertical-align: top;
+}
+
+.video-list {
+    width: 345px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto -5px;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.video-list li {
+    width: 140px;
+    background-color: #fff578;
+    position: relative;
+    border-radius: 8px;
+    padding: 12px 12px 8px 12px;
+    margin-bottom: 1rem;
+}
+.youtube_list li:nth-of-type(odd) {
+    margin-left: 0;
+}
+
+.yt-list-btn {
+    padding-top: 56.25%;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.yt-list-btn:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: url(./images/bt_youtube.png) no-repeat left top/30px 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btn-1 {
+    background: url("./images/mqdefault_1.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#btn-2 {
+    background: url("./images/mqdefault_2.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#btn-3 {
+    background: url("./images/mqdefault_3.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+#btn-4 {
+    background: url("./images/mqdefault_4.jpeg");
+    background-size: cover;
+    background-position: center center;
+}
+
+.video-list li .date {
+    margin: 5px 0 5px;
+    font-size: 8px;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.video-list li .date span {
+    font-size: 6px;
+    padding: 0 3px;
+}
+
+.video-list li .yt-title {
+    font-size: 12px;
+    line-height: 1.3;
+    font-weight: 800;
+    text-align: left;
+}
+
+.video-list li:first-child:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: -12px;
+    left: -12px;
+    width: 49px;
+    height: 46px;
+    background: url(../images/ic_new.png) no-repeat top left/49px 46px;
+}
+
+.see-all-yt {
+    font-weight: 800;
+    text-align: center;
+    margin: 45px auto 0;
+}
+
+.see-all-yt a{
+    padding: 12px 51px;
+    border-radius: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #462e31;
+    color: #fff;
+    letter-spacing: 0.25em;
 }
