@@ -11,6 +11,22 @@ body {
     line-height: 1;
 }
 
+.more-btn {
+    font-weight: 800;
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.more-btn a{
+    padding: 12px 51px;
+    border-radius: 100px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: #462e31;
+    color: #fff;
+    letter-spacing: 0.25em;
+}
+
 /* =================== loader =================== */
 .loader-container {
     background-color: #fff;
@@ -543,21 +559,7 @@ main {
     background: url(../images/ic_new.png) no-repeat top left/49px 46px;
 }
 
-.see-all-yt {
-    font-weight: 800;
-    text-align: center;
-    margin: 20px auto 0;
-}
 
-.see-all-yt a{
-    padding: 12px 51px;
-    border-radius: 100px;
-    font-size: 14px;
-    text-decoration: none;
-    background-color: #462e31;
-    color: #fff;
-    letter-spacing: 0.25em;
-}
 
 /* =================== info section =================== */
 .info-section {
@@ -569,7 +571,7 @@ main {
     position: relative;
     margin-top: 0;
     padding: 19px 0 61px;
-    height: 270px;
+
 }
 .info-wrap:before {
     position: absolute;
@@ -581,6 +583,18 @@ main {
     width: 1280px;
     height: 27px;
     background: url(./images/bg_01.png) no-repeat top center/1280px 27px;
+}
+.info-wrap:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 27px;
+    background: url(./images/bg_02.png) no-repeat top center/1280px 27px;
 }
 .info-wrap h2 {
     text-align: center;
@@ -633,4 +647,33 @@ ul li {
     text-overflow: ellipsis;
     text-align: left;
     margin: 0;
+}
+
+.info-btn {
+    margin-top: 45px;
+}
+
+/* =================== intro section =================== */
+.intro-wrap {
+    padding: 113px 0 70px;
+    height: 323px;
+}
+.intro-wrap h2 {
+    padding-bottom: 32px;
+    font-size: 24px;
+    text-align: center;
+}
+.intro-wrap h2 img {
+    width: 218px;
+    height: auto;
+}
+
+.intro-text {
+    text-indent: 500%;
+    white-space: nowrap;
+    overflow: hidden;
+    background: url(./images/tx_intro_sp.png) no-repeat left top/304px 248px;
+    width: 304px;
+    height: 248px;
+    margin: auto;
 }
