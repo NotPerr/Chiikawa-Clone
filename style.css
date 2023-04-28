@@ -777,3 +777,43 @@ ul li {
     color: #ff82d2;
     text-align: center;
 }
+
+/* =================== chara section =================== */
+.chara-wrap {
+    padding: 196px 0 70px;
+    height: 312px;
+    z-index: 1000;
+    position: relative;
+}
+.chara-wrap h2 {
+    padding-bottom: 17px;
+    text-align: center;
+}
+
+.chara-list {
+    position: relative;
+    width: 360px;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: -47px;
+    margin-top: -13px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 44px;
+    padding-left: 0;
+}
+
+.chara-list li {
+    display: flex;
+    align-items: flex-end;
+}
+
+.chara-list li img {
+    width: 103px;
+    height: auto;
+    vertical-align: top;
+}
+
+.chara-btn {
+    margin: 45px auto 0;
+}
