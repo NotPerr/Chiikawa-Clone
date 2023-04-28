@@ -377,6 +377,51 @@ main {
     opacity: 1;
 }
 
+.bg_chara_usagi {
+    z-index: 925;
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background: url(./images/bg_chara_03.png) no-repeat left top;
+    top: 1852px;
+    /* right: 400px; */
+    left: 165px;
+    animation: animation-jump-usagi 3s linear 0s infinite;
+    background-size: contain;
+}
+@keyframes animation-jump-usagi {
+    0% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    3% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+    }
+    13% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+    }
+    17% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    20% {
+        transform: scale(0.9, 1.2) translate(0%, -50%);
+    }
+    25% {
+        transform: scale(0.9, 1.2) translate(0%, -20%);
+    }
+    28% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+    }
+    33% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    40% {
+        transform: scale(1.1, 0.95) translate(0%, 3%);
+    }
+    45% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+}
+
 @keyframes animation-hyokkori-chiikawa {
     0% {
         transform: scale(.1, .1);
