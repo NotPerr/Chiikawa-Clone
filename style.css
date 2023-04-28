@@ -1,7 +1,7 @@
 
 body {
-    width: 100vw;
-    /* min-height: 100vh; */
+    max-width: 100vw;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     font-family: "vdl-v7marugothic", sans-serif;
@@ -9,7 +9,6 @@ body {
     position: relative;
     color: #462e31;
     line-height: 1;
-    
 }
 
 /* =================== loader =================== */
@@ -70,7 +69,8 @@ body {
     animation: fadeInOut 1s linear 0s 1 forwards;
     opacity: 0;
     position: relative;
-    max-width: 100vw;
+    width: 100%;
+    overflow: hidden;
 }
 
 .wrapper-main h1 {
@@ -99,7 +99,7 @@ header {
     z-index: 9998;
     background-color: #fff;
     font-weight: 700;
-    min-width: 100vw;
+    width: 100vw;
     top: 0;
     left: 0;
 }
@@ -184,8 +184,7 @@ header h1 img {
 .banner {
     position: relative;
     background: url("./images/banner.jpeg");
-    min-height: 100vh;
-    min-width: 100vw;
+    height: calc(100vh - 60px);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -319,6 +318,7 @@ main {
     width: 224px;
     height: 5978px;
     z-index: 910;
+    pointer-events: none;
 }
 .tree_sp_left_02 {
     z-index: 910;
@@ -557,4 +557,80 @@ main {
     background-color: #462e31;
     color: #fff;
     letter-spacing: 0.25em;
+}
+
+/* =================== info section =================== */
+.info-section {
+    padding-top: 130px;
+}
+
+.info-wrap {
+    background: #fff;
+    position: relative;
+    margin-top: 0;
+    padding: 19px 0 61px;
+    height: 270px;
+}
+.info-wrap:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 27px;
+    background: url(./images/bg_01.png) no-repeat top center/1280px 27px;
+}
+.info-wrap h2 {
+    text-align: center;
+}
+.info-wrap h2 img {
+    width: 218px;
+    height: auto;
+}
+ul li {
+    list-style: none;
+}
+
+.info-list {
+    width: 345px;
+    margin: 0 auto -2px;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+.info-list li {
+    display: block;
+    letter-spacing: 0em;
+    border-bottom: solid 1px #6a3f39;
+}
+
+.info-list li:first-child {
+    padding: 0 5px 8px;
+}
+.info-list li {
+    padding: 8px 5px;
+    letter-spacing: 0em;
+}
+
+.info-list .date {
+    font-size: 11px;
+    padding-bottom: 3px;
+    color: #ff82d2;
+    letter-spacing: 0.05em;
+    padding-right: 32px;
+    font-weight: 800;
+}
+.info-list .title {
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    margin: 0;
 }
