@@ -817,3 +817,26 @@ ul li {
 .chara-btn {
     margin: 45px auto 0;
 }
+
+/* =================== staff section =================== */
+.staff-wrap {
+    /* height: 500px; */
+    padding: 138px 0 110px;
+    position: relative;
+    z-index: 1300;
+}
+
+.staff-wrap h2 {
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.staff-list, .cast-list {
+    font-size: 12px;
+    line-height: 1.75;
+    text-align: center;
+    padding: 0;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
