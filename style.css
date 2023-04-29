@@ -389,6 +389,30 @@ main {
     animation: animation-jump-usagi 3s linear 0s infinite;
     background-size: contain;
 }
+
+.bg_chara_momo {
+    z-index: 925;
+    position: absolute;
+    width: 81.25px;
+    height: 69.75px;
+    background: url(./images/bg_chara_04.png) no-repeat left top;
+    top: 2580px;
+    left: 230px;
+    animation: animation-glider-momonga 2s ease 1s infinite normal none;
+    background-size: cover;
+}
+@keyframes animation-glider-momonga {
+    0% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
 @keyframes animation-jump-usagi {
     0% {
         transform: scale(1, 1) translate(0%, 0%);
