@@ -418,6 +418,23 @@ main {
     }
 }
 
+.bg_sp_chara_chiikawa {
+    width: 56px;
+    height: 74px;
+    z-index: 915;
+    position: absolute;
+    top: 3209px;
+    left: 18px;
+    background: url(./images/bg_chara_09_sabun.png) no-repeat top -67px left 0/168px 336px;
+    animation: sp-animation-parapara-chiikawa 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-chiikawa {
+    100% {
+        background-position: -117px -66.5px;
+    }
+}
+
+
 @keyframes animation-glider-momonga {
     0% {
         transform: rotate(10deg);
