@@ -401,6 +401,23 @@ main {
     animation: animation-glider-momonga 2s ease 1s infinite normal none;
     background-size: cover;
 }
+
+.bg_chara_hachi2 {
+    width: 56px;
+    height: 65px;
+    z-index: 900;
+    position: absolute;
+    top: 3130px;
+    left: 61px;
+    background: url(./images/bg_chara_09_sabun.png) no-repeat top left 0/168px 336px;
+    animation: sp-animation-parapara-hachi 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-hachi {
+    100% {
+        background-position: -116.5px 0;
+    }
+}
+
 @keyframes animation-glider-momonga {
     0% {
         transform: rotate(10deg);
