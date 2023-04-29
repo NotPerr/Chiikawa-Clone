@@ -434,6 +434,28 @@ main {
     }
 }
 
+.bg_sp_chara_oishii {
+    z-index: 925;
+    position: absolute;
+    width: 26px;
+    height: 43px;
+    background: url(../images/bg_chara_05.png) no-repeat left top/26px 43px;
+    top: 3805px;
+    right: 50px;
+    animation: float 3s ease 0s infinite normal none;
+}
+@keyframes float {
+    0% {
+        transform: translate(0, 30%);
+    }
+    50% {
+        transform: translate(0, 10%);
+    }
+    100% {
+        transform: translate(0, 30%);
+    }
+}
+
 
 @keyframes animation-glider-momonga {
     0% {
