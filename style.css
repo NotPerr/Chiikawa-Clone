@@ -438,6 +438,29 @@ main {
     }
 }
 
+.bg_sp_chara_usagi2 {
+    z-index: 900;
+    position: absolute;
+    width: 69px;
+    height: 76px;
+    background: url(./images/bg_chara_06.png) no-repeat left top/69px 76px;
+    top: 4275px;
+    right: 58px;
+    animation: shake 2s ease 0s infinite normal none;
+    transform-origin: 120% 120%;
+}
+@keyframes shake {
+    0% {
+        transform: rotate(7deg);
+    }
+    50% {
+        transform: rotate(-7deg);
+    }
+    100% {
+        transform: rotate(7deg);
+    }
+}
+
 .bg_sp_chara_oishii {
     z-index: 925;
     position: absolute;
