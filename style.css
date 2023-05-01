@@ -18,6 +18,10 @@ body {
     margin: 20px auto 0;
 }
 
+h2 {
+    text-align: center;
+}
+
 h2 img {
     width: 218px;
     height: auto;
@@ -901,7 +905,7 @@ ul li {
 /* =================== staff section =================== */
 .staff-wrap {
     /* height: 500px; */
-    padding: 138px 0 110px;
+    padding: 160px 0 0px;
     position: relative;
     z-index: 1300;
 }
@@ -919,4 +923,88 @@ ul li {
     letter-spacing: 0.1em;
     margin-bottom: 20px;
     font-weight: 800;
+}
+
+/* =================== anime-info section =================== */
+
+.anime-info-wrap {
+    padding-bottom: 22px;
+    margin-top: 0;
+    padding: 5px 0 57px;
+    position: relative;
+    background-color: #fff;
+    z-index: 10;
+    margin-bottom: 40px;
+}
+.anime-info-wrap h2 {
+    padding-top: 0;
+    margin: 0;
+}
+
+.anime-info-wrap:before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    top: -8px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 27px;
+    background: url(../images/bg_01.png) no-repeat top center/1280px 27px;
+}
+
+.anime-tv {
+    width: 343px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 1.6;
+    display: flex;
+    font-weight: 800;
+    align-items: center;
+}
+
+.anime-tv h3 {
+    width: 59px;
+    height: 56px;
+    background: url(./images/ic_anime_01.png) no-repeat left top 5px/59px 50px;
+    background-size: 100%;
+    margin-right: 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    display: inline-block;
+}
+
+.anime-tv .tv-box {
+    width: 272px;
+    height: 63px;
+    background: url(./images/tx_anime_01_sp.png) no-repeat left top/272px 63px;
+    display: inline-block;
+}
+
+.anime-deli {
+    margin: 0 auto 0;
+    padding-top: 15px;
+    width: 343px;
+    font-size: 12px;
+    line-height: 1.6;
+    display: flex;
+    align-items: center;
+}
+
+.anime-deli h3 {
+    width: 59px;
+    height: 55px;
+    background: url(./images/ic_anime_03.png) no-repeat left top 4px/59px 50px;
+    background-size: 100%;
+    margin-right: 10px;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+}
+
+.anime-deli .deli-box {
+    overflow: hidden;
+    width: 236px;
+    height: 95px;
+    background: url(./images/tx_anime_02_sp_2.png) no-repeat left top/236px 95px;
 }
