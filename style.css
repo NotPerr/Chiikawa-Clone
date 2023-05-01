@@ -1070,3 +1070,56 @@ ul li {
 .goods-list li:first-child {
     margin-top: 0px;
 }
+
+/* =================== dvd section =================== */
+.dvd-wrap {
+    padding: 184px 0 0px;
+    position: relative;
+    z-index: 1300;
+}
+/* =============== swiper =============== */
+.swiper {
+    padding: 0 70px !important;
+}
+
+
+.swiper-slide {
+    margin-right: 80px !important;
+    box-sizing: border-box !important;
+    width: 315px !important;
+}
+
+.swiper-box {
+    width: 235px;
+}
+.swiper-box img {
+    width: 100%;
+}
+.box-content {
+    background: #fff;
+    padding: 10px 20px 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 6px;
+    text-align: center;
+}
+.box-content p {
+    font-size: 14px;
+    height: 60px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.swiper-box .box-title {
+    font-size: 11px;
+    letter-spacing: 2px;
+    padding: 3px 20px;
+    text-align: center;
+    background-color: #fff578;
+    border-radius: 50px;
+    color: #ff86cf;
+    font-weight: 800;
+}
