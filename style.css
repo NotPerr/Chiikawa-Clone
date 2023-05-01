@@ -27,6 +27,12 @@ h2 img {
     height: auto;
 }
 
+ul {
+    margin: 0;
+    text-align: center;
+    padding: 0;
+}
+
 .more-btn a{
     padding: 12px 51px;
     border-radius: 100px;
@@ -976,6 +982,18 @@ ul li {
     background: url(../images/bg_01.png) no-repeat top center/1280px 27px;
 }
 
+.anime-info-wrap:after {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    bottom: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1280px;
+    height: 27px;
+    background: url(./images/bg_02.png) no-repeat top center/1280px 27px;
+}
+
 .anime-tv {
     width: 343px;
     margin: auto;
@@ -1030,4 +1048,25 @@ ul li {
     width: 236px;
     height: 95px;
     background: url(./images/tx_anime_02_sp_2.png) no-repeat left top/236px 95px;
+}
+
+
+/* =================== goods section =================== */
+.goods-wrap {
+    padding: 60px 0 55px;
+    height: 258px;
+    z-index: 1300;
+    position: relative;
+}
+
+.goods-list img {
+    width: 305px;
+    height: auto;
+}
+
+.goods-list li {
+    margin-top: 17px;
+}
+.goods-list li:first-child {
+    margin-top: 0px;
 }
