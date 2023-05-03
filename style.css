@@ -512,6 +512,29 @@ main {
     }
 }
 
+.bg_sp_chara_hachi3 {
+    z-index: 923;
+    position: absolute;
+    width: 52px;
+    height: 59px;
+    background: url(../images/bg_chara_08.png) no-repeat left top/52px 59px;
+    top: 6025px;
+    right: 135px;
+    animation: animation-escape-hachiware 2s ease 1s infinite normal none;
+    transform-origin: 40% 120%;
+}
+@keyframes animation-escape-hachiware {
+    0% {
+        transform: rotate(-10deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
 .bg_sp_chara_oishii {
     z-index: 925;
     position: absolute;
