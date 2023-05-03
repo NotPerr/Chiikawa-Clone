@@ -103,6 +103,7 @@ ul {
     position: relative;
     width: 100%;
     overflow: hidden;
+    background-color: #d3ecbf;
 }
 
 .wrapper-main h1 {
@@ -323,8 +324,8 @@ header h1 img {
 main {
     position: relative;
     border-top: solid 3px #5f3e42;
-    background: url("./images/bg_03_sp.jpeg") no-repeat center ;
-    max-width: 100%;
+    background: url("./images/bg_03_sp.jpeg") no-repeat center top 83px/345px auto;
+    width: 100%;
 }
 
 .tree_sp_left_01 {
@@ -435,8 +436,41 @@ main {
     width: 53px;
     height: 55px;
     background: url(./images/bg_chara_07.png) no-repeat left top/53px 55px;
-    top: 5498px;
+    top: 5490px;
     left: 135px;
+    animation: animation-jump-chiikawa 3s linear 0s infinite;
+}
+@keyframes animation-jump-chiikawa {
+    0% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    3% {
+        transform: scale(1.1, 0.9) translate(0%, 5%);
+    }
+    13% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+    }
+    17% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    20% {
+        transform: scale(0.9, 1.2) translate(0%, -50%);
+    }
+    25% {
+        transform: scale(0.9, 1.2) translate(0%, -20%);
+    }
+    28% {
+        transform: scale(1.2, 0.8) translate(0%, 15%);
+    }
+    33% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
+    40% {
+        transform: scale(1.1, 0.95) translate(0%, 3%);
+    }
+    45% {
+        transform: scale(1, 1) translate(0%, 0%);
+    }
 }
 
 .bg_sp_chara_chiikawa {
@@ -1137,6 +1171,10 @@ ul li {
 }
 
 /* =================== twitter section =================== */
+.twitter-section {
+    padding-bottom: 279px;
+}
+
 .twitter-wrap {
     position: relative;
     width: 345px;
@@ -1148,6 +1186,7 @@ ul li {
     border-radius: 10px;
     padding: 20px;
     box-sizing: border-box;
+    
 }
 
 .meza-wrap {
@@ -1160,4 +1199,103 @@ ul li {
 .meza img {
     width: 165px;
     height: auto;
+}
+
+/* =================== footer =================== */
+.footer-wrap {
+    padding: 240px 0 0px;
+    font-size: 12px;
+    background: url(./images/bg_foot_01_sp.png) no-repeat center bottom/1050px 265px;
+    color: #fff;
+    text-align: center;
+    width: 2560px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%);
+    position: relative;
+}
+
+footer .chara-list {
+    position: absolute;
+    top: -22px;
+    left: 43.5%;
+    width: 342px;
+    height: 107px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-chara-01 {
+    width: 107px;
+    height: 127px;
+    background: url(./images/bg_foot_03.png) no-repeat top 0 left 0/240px 425px;
+    margin-top: 30px;
+    animation: sp-animation-parapara-footer-hachi 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-footer-hachi {
+    100% {
+        background-position: -220px 0;
+    }
+}
+
+.foot-chara-02 {
+    width: 108px;
+    height: 122px;
+    background: url(./images/bg_foot_chiikawa.png) no-repeat top 0 left 0/200% 100%;
+    margin-top: 35px;
+    animation: sp-animation-parapara-footer-chiikawa 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-footer-chiikawa {
+    100% {
+        background-position: -216px 0;
+    }
+}
+
+.foot-chara-03 {
+    width: 117px;
+    height: 157px;
+    background: url(./images/bg_foot_usagi.png) no-repeat top 0 left 0/200% 100%;
+    animation: sp-animation-parapara-footer-usagi 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-footer-usagi {
+    100% {
+        background-position: -234px 0;
+    }
+}
+
+.footer-info {
+    margin-top: -90px;
+}
+
+.footer-info .share {
+    margin-top: 7px;
+    letter-spacing: 0.1rem;
+}
+
+.footer-sns {
+    width: 95px;
+    margin: 11px auto 11px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-sns li {
+    width: 23px;
+    height: auto;
+}
+.footer-sns li img {
+    width: 23px;
+    height: auto;
+    vertical-align: top;
+}
+
+footer .copyright {
+    font-size: 8px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    content: '';
+    background: url(./images/tx_copy_sp.png) no-repeat top left/122px 8px;
+    width: 122px;
+    height: 8px;
 }
