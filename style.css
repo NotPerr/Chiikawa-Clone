@@ -220,6 +220,7 @@ header h1 img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-top: 60px;
 }
 
 .twitter-link-container {
@@ -426,6 +427,16 @@ main {
     100% {
         background-position: -116.5px 0;
     }
+}
+
+.bg_sp_chara_chiikawa2 {
+    z-index: 900;
+    position: absolute;
+    width: 53px;
+    height: 55px;
+    background: url(./images/bg_chara_07.png) no-repeat left top/53px 55px;
+    top: 5498px;
+    left: 135px;
 }
 
 .bg_sp_chara_chiikawa {
@@ -1076,6 +1087,7 @@ ul li {
     padding: 184px 0 0px;
     position: relative;
     z-index: 1300;
+    height: 635px;
 }
 /* =============== swiper =============== */
 .swiper {
@@ -1122,4 +1134,30 @@ ul li {
     border-radius: 50px;
     color: #ff86cf;
     font-weight: 800;
+}
+
+/* =================== twitter section =================== */
+.twitter-wrap {
+    position: relative;
+    width: 345px;
+    height: 250px;
+    overflow: scroll;
+    z-index: 1300;
+    margin: 0 auto;
+    background: #fff578;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.meza-wrap {
+    width: 345px;
+    margin: 30px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.meza img {
+    width: 165px;
+    height: auto;
 }
