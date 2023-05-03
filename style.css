@@ -535,6 +535,22 @@ main {
     }
 }
 
+.bg_sp_chara_yoroi{
+    width: 82px;
+    height: 82px;
+    z-index: 900;
+    position: absolute;
+    top: 6119px;
+    left: 29px;
+    background: url(./images/bg_chara_09_sabun.png) no-repeat top -221px left 0/168px 336px;
+    animation: sp-animation-parapara-yoroi 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-yoroi {
+    100% {
+        background-position: -168px -221px;
+    }
+}
+
 .bg_sp_chara_oishii {
     z-index: 925;
     position: absolute;
