@@ -93,3 +93,23 @@ var videoUrl = 'https://www.youtube.com/embed/' + videoId;
 iframe.src = videoUrl;
 
 
+// toggle mobile menu
+const mobileMenu = document.getElementById('mobile_menu'),
+      closeBtnMenu = document.getElementById('close_btn-menu'),
+      openMenu = document.getElementById('open-menu');
+
+if(closeBtnMenu) {
+  closeBtnMenu.addEventListener('click',() => {
+    mobileMenu.classList.remove('show-mobile-menu');
+    closeBtnMenu.classList.remove('show');
+    openMenu.classList.remove('hide');
+  })
+}
+
+if(openMenu) {
+  openMenu.addEventListener('click',() => {
+    mobileMenu.classList.add('show-mobile-menu');
+    openMenu.classList.add('hide');
+    closeBtnMenu.classList.add('show');
+  })
+}
