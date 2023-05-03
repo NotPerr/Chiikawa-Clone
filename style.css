@@ -551,6 +551,22 @@ main {
     }
 }
 
+.bg_sp_chara_kuri {
+    width: 57px;
+    height: 76px;
+    z-index: 900;
+    position: absolute;
+    top: 4823px;
+    left: 108px;
+    background: url(./images/bg_chara_10_sabun.png) no-repeat top 0px left 0/200% 100%;
+    animation: sp-animation-parapara-kuri 1.0s steps(2) infinite;
+}
+@keyframes sp-animation-parapara-kuri {
+    100% {
+        background-position: -114px 0px;
+    }
+}
+
 .bg_sp_chara_oishii {
     z-index: 925;
     position: absolute;
