@@ -1389,6 +1389,27 @@ ul li {
     font-weight: 800;
 }
 
+.swiper-button-prev {
+    width: 30px !important;
+    height: 30px !important;
+    left: 26px !important;
+    background-image: url(./images/swiper_prev.png);
+    background-size: cover;
+}
+.swiper-button-prev:after {
+    content: '' !important;
+}
+
+.swiper-button-next {
+    width: 30px !important;
+    height: 30px !important;
+    right: 26px !important;
+    background-image: url(./images/swiper_next.png);
+    background-size: cover;
+}
+.swiper-button-next:after {
+    content: '' !important;
+}
 /* =================== twitter section =================== */
 .twitter-section {
     padding-bottom: 279px;
