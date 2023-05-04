@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     max-width: 100vw;
     min-height: 100vh;
@@ -132,6 +136,25 @@ ul {
     }
 }
 
+/* =================== scroll top button =================== */
+.show-scroll {
+    display: block !important;
+}
+#scroll-top {
+    position: fixed;
+    bottom: 2%;
+    left: 2%;
+    z-index: 1999;
+    display: none;
+}
+#scroll-top .img-wrap {
+    position: relative;
+    width: 100px;
+    cursor: pointer;
+}
+#scroll-top .img-wrap .spear {
+    width: 40px;
+}
 
 /* =================== header =================== */
 header {
@@ -560,8 +583,8 @@ main {
     height: 90px;
     background: url(./images/bg_chara_03.png) no-repeat left top;
     top: 1852px;
-    /* right: 400px; */
-    left: 165px;
+    right: 150px;
+    /* left: 165px; */
     animation: animation-jump-usagi 3s linear 0s infinite;
     background-size: contain;
 }
@@ -1539,3 +1562,6 @@ footer .copyright {
     width: 122px;
     height: 8px;
 }
+
+
+
