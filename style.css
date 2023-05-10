@@ -165,6 +165,13 @@ header {
     width: 100vw;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav {
+    display: none;
 }
 
 .header-wrapper {
@@ -1015,6 +1022,8 @@ main {
 /* =================== info section =================== */
 .info-section {
     padding-top: 130px;
+    z-index: 9997;
+    position: relative;
 }
 
 .info-wrap {
@@ -1368,13 +1377,15 @@ ul li {
 /* =============== swiper =============== */
 .swiper {
     padding: 0 70px !important;
+    max-width: 300px !important;
 }
 
 
 .swiper-slide {
     margin-right: 80px !important;
     box-sizing: border-box !important;
-    width: 315px !important;
+    display: flex !important;
+    justify-content: center !important;
 }
 
 .swiper-box {
@@ -1564,4 +1575,74 @@ footer .copyright {
 }
 
 
+/* big screen */
+@media screen and (min-width: 1200px) {
+    .header-wrapper {
+        width: 1060px;
+        justify-content: space-between;
+    }
+    .wrapper-main h1 {
+        margin-top: 40px;
+    }
 
+    .menu-btn {
+        display: none;
+    }
+
+    .header-nav {
+        display: block;
+    }
+    .header-nav .menu {
+        width: 844px;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .menu li:before {
+        display: none;
+    }
+    .menu li:after {
+        display: none;
+    }
+    .menu li:nth-of-type(1) a {
+        width: 93px;
+        background: url(../images/ic_hum_01.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(2) a {
+        width: 93px;
+        background: url(../images/ic_hum_02.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(3) a {
+        width: 93px;
+        background: url(../images/ic_hum_03.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(4) a {
+        width: 101px;
+        background: url(../images/ic_hum_04.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(5) a {
+        width: 97px;
+        background: url(../images/ic_hum_05.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(6) a {
+        width: 104px;
+        background: url(../images/ic_hum_06.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(7) a {
+        width: 85px;
+        background: url(../images/ic_hum_07.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(8) a {
+        width: 96px;
+        background: url(../images/ic_hum_08.png) no-repeat center bottom 25px;
+    }
+    .menu li:nth-of-type(9) a {
+        width: 82px;
+        background: url(../images/ic_hum_09.png) no-repeat center bottom 25px;
+    }
+
+    .menu li a {
+        height: 120px;
+    }
+
+}
