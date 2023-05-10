@@ -422,6 +422,7 @@ header h1 img {
     position: absolute;
     top: 4rem;
     left: .6rem;
+    z-index: 9997;
 }
 
 .twitter-link img {
@@ -1584,6 +1585,9 @@ footer .copyright {
     .wrapper-main h1 {
         margin-top: 40px;
     }
+    header {
+        height: 120px;
+    }
 
     .menu-btn {
         display: none;
@@ -1643,6 +1647,45 @@ footer .copyright {
 
     .menu li a {
         height: 120px;
+    }
+
+    .banner {
+        background: url("./images/kv_01.jpeg");
+        width: 100%;
+        height: calc(100vh - 120px);
+        margin-top: 120px;
+        background-size: cover;
+    }
+
+    .twitter-link img {
+        width: 200px;
+    }
+    .twitter-link-container {
+        bottom: 10px;
+        top: initial;
+        right: 350px;
+        left: initial;
+    }
+
+    .movie-container {
+        width: 378px;
+        height: 321px;
+        background: url(../images/bt_kv_03.png) no-repeat;
+    }
+    .movie-content {
+        padding: 156px 0 0 74px;
+    }
+    .video-modal-trigger {
+        width: 218px;
+        position: relative;
+        padding-top: 56.25%;
+        top: initial;
+        left: initial;
+    }
+    .video-modal-trigger:after {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
 }
