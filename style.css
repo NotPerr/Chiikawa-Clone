@@ -546,7 +546,7 @@ main {
     right: 0px;
     width: 224px;
     height: 5978px;
-    z-index: 910;
+    z-index: 9998;
     pointer-events: none;
 }
 .tree_sp_left_02 {
@@ -1686,6 +1686,45 @@ footer .copyright {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+
+    h2 {
+        font-size: 48px;
+        text-align: center;
+        padding-bottom: 36px;
+    }
+
+    .youtube-content h2 img {
+        width: initial;
+    }
+
+    .video-list {
+        flex-wrap: nowrap;
+        width: 750px;
+        margin: auto;
+    }
+
+    .video-list li {
+        padding: 15px 15px 20px 15px;
+        width: 210px;
+    }
+    .video-list li .date {
+        margin: 8px 0 10px;
+        font-size: 14px;
+    }
+
+    .video-list .sp {
+        display: none;
+    }
+
+    .more-btn {
+        margin: 80px auto 0;
+    }
+    .more-btn a {
+        font-size: 24px;
+        letter-spacing: 0.25em;
+        padding: 18px 85px 22px;
     }
 
 }
