@@ -1742,7 +1742,7 @@ footer .copyright {
         z-index: 9996;
     }
     .tree_sp_left_02 {
-        z-index: 9998;
+        z-index: 9996;
         position: absolute;
         width: 1157px;
         height: 3126px;
@@ -1853,6 +1853,35 @@ footer .copyright {
         left: initial;
     }
 
+    .chara-wrap {
+        padding: 350px 0 100px;
+        height: 670px;
+        z-index: 9997;
+    }
+    .chara-list {
+        width: 980px;
+        margin: 0 auto;
+    }
+    .chara-list li {
+        width: 100%;
+    }
+    
+    .chara-list li img {
+        width: 247px;
+    }
+
+    .ie_02 {
+        z-index: 9998;
+        position: absolute;
+        width: 1011px;
+        height: 1246px;
+        background: url(./images/bg_ie_02.png) no-repeat left top;
+        top: 3220px;
+        display: block !important;
+        left: -320px;
+    }
+    
+
 }
 
 
@@ -1862,5 +1891,8 @@ footer .copyright {
     display: none;
 }
 .pc-hyokkori-hachiware {
+    display: none;
+}
+.ie_02 {
     display: none;
 }
