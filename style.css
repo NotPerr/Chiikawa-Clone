@@ -1578,6 +1578,12 @@ footer .copyright {
 
 /* big screen */
 @media screen and (min-width: 1200px) {
+    main {
+        background: url(./images/bg_03.jpg) no-repeat center top 160px ;
+        padding-top: 60px;
+        width: 100%;
+    }
+
     .header-wrapper {
         width: 1060px;
         justify-content: space-between;
@@ -1665,14 +1671,14 @@ footer .copyright {
         top: initial;
         right: 350px;
         left: initial;
-        z-index: 9997;
+        z-index: 9998;
     }
 
     .movie-container {
         width: 378px;
         height: 321px;
         background: url(./images/bt_kv_03.png) no-repeat;
-        z-index: 9996;
+        z-index: 9997;
     }
     .movie-content {
         padding: 156px 0 0 74px;
@@ -1739,10 +1745,10 @@ footer .copyright {
         background: url(./images/bg_2_tree_left_01.png) no-repeat left top;
         top: -93px;
         left: -320px;
-        z-index: 9996;
+        z-index: 9995;
     }
     .tree_sp_left_02 {
-        z-index: 9996;
+        z-index: 9997;
         position: absolute;
         width: 1157px;
         height: 3126px;
@@ -1778,13 +1784,14 @@ footer .copyright {
     }
     .bg_sp_chara_hachi {
         display: none;
+        
     }
     .bg_sp_chara_hachi {
         display: none;
     }
     .pc-hyokkori-hachiware {
         animation: animation-hyokkori-hachiware .8s linear forwards, shake-hachiware 2s ease 1s infinite normal none;
-        z-index: 9997;
+        z-index: 9996;
         position: absolute;
         width: 224px;
         height: 266px;
@@ -1880,13 +1887,77 @@ footer .copyright {
         display: block !important;
         left: -320px;
     }
+
+    .staff-list, .cast-list {
+        font-size: 20px;
+    }
+
+    .tree_left_03 {
+        display: block !important;
+        left: -320px;
+        position: absolute;
+        width: 744px;
+        height: 1015px;
+        background: url(./images/bg_2_tree_left_03.png) no-repeat left top;
+        top: 4174px;
+        z-index: 9997;
+    }
+    .bg_chara_hachi2 {
+        background: url(./images/bg_chara_09_sabun.png) no-repeat top 0 left 0;
+        top: 4531px;
+        height: 232px;
+        width: 198px;
+        left: 273px;
+        animation: pc-animation-parapara-hachi 1.0s steps(2) infinite;
+        z-index: 9995;
+    }
+
+    .bg_sp_chara_chiikawa {
+        background: url(./images/bg_chara_09_sabun.png) no-repeat top -242px left 0;
+        width: 199px;
+        height: 259px;
+        top: 4974px;
+        left: 77px;
+        z-index: 9998;
+        animation: pc-animation-parapara-chiikawa 1.0s steps(2) infinite;
+    }
+
+    .bg_sp_chara_oishii {
+        width: 96px;
+        height: 160px;
+        background: url(./images/bg_chara_05.png) no-repeat left top;
+        top: 4670px;
+        z-index: 9997;
+    }
+
+    .bg_sp_chara_chiikawa2 {
+        display: none;
+    }
+
+    .bg_sp_chara_usagi2 {
+        width: 255px;
+        height: 282px;
+        background: url(./images/bg_chara_06.png) no-repeat left top;
+        top: 5550px;
+    }
+
+    .tree_left_04 {
+        position: absolute;
+        width: 693px;
+        height: 3941px;
+        background: url(./images/bg_2_tree_left_04.png) no-repeat left top;
+        top: 5062px;
+        display: block !important;
+        left: -320px;
+        z-index: 9996;
+    }
     
 
 }
 
 
 
-/* character animation for large screen */
+/* for large screen */
 .pc-hyokkori-chiikawa {
     display: none;
 }
@@ -1895,4 +1966,21 @@ footer .copyright {
 }
 .ie_02 {
     display: none;
+}
+.tree_left_03 {
+    display: none;
+}
+.tree_left_04 {
+    display: none;
+}
+@keyframes pc-animation-parapara-hachi {
+    100% {
+        background-position: -416px 0;
+    }
+}
+
+@keyframes pc-animation-parapara-chiikawa {
+    100% {
+        background-position: -418px -240px;
+    }
 }
