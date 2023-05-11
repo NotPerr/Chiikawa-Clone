@@ -144,7 +144,7 @@ ul {
     position: fixed;
     bottom: 2%;
     left: 2%;
-    z-index: 1999;
+    z-index: 9999;
     display: none;
 }
 #scroll-top .img-wrap {
@@ -159,7 +159,7 @@ ul {
 /* =================== header =================== */
 header {
     position: fixed;
-    z-index: 9998;
+    z-index: 9999;
     background-color: #fff;
     font-weight: 700;
     width: 100vw;
@@ -1023,7 +1023,7 @@ main {
 /* =================== info section =================== */
 .info-section {
     padding-top: 130px;
-    z-index: 9997;
+    z-index: 9990;
     position: relative;
 }
 
@@ -1610,39 +1610,39 @@ footer .copyright {
     }
     .menu li:nth-of-type(1) a {
         width: 93px;
-        background: url(../images/ic_hum_01.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_01.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(2) a {
         width: 93px;
-        background: url(../images/ic_hum_02.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_02.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(3) a {
         width: 93px;
-        background: url(../images/ic_hum_03.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_03.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(4) a {
         width: 101px;
-        background: url(../images/ic_hum_04.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_04.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(5) a {
         width: 97px;
-        background: url(../images/ic_hum_05.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_05.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(6) a {
         width: 104px;
-        background: url(../images/ic_hum_06.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_06.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(7) a {
         width: 85px;
-        background: url(../images/ic_hum_07.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_07.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(8) a {
         width: 96px;
-        background: url(../images/ic_hum_08.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_08.png) no-repeat center bottom 25px;
     }
     .menu li:nth-of-type(9) a {
         width: 82px;
-        background: url(../images/ic_hum_09.png) no-repeat center bottom 25px;
+        background: url(./images/ic_hum_09.png) no-repeat center bottom 25px;
     }
 
     .menu li a {
@@ -1665,12 +1665,14 @@ footer .copyright {
         top: initial;
         right: 350px;
         left: initial;
+        z-index: 9997;
     }
 
     .movie-container {
         width: 378px;
         height: 321px;
-        background: url(../images/bt_kv_03.png) no-repeat;
+        background: url(./images/bt_kv_03.png) no-repeat;
+        z-index: 9996;
     }
     .movie-content {
         padding: 156px 0 0 74px;
@@ -1693,6 +1695,10 @@ footer .copyright {
         font-size: 48px;
         text-align: center;
         padding-bottom: 36px;
+    }
+
+    .youtube-content {
+        padding: 140px 0 220px;
     }
 
     .youtube-content h2 img {
@@ -1727,4 +1733,74 @@ footer .copyright {
         padding: 18px 85px 22px;
     }
 
+    .tree_sp_left_01 {
+        width: 599px;
+        height: 1567px;
+        background: url(./images/bg_2_tree_left_01.png) no-repeat left top;
+        top: -93px;
+        left: -320px;
+        z-index: 9996;
+    }
+    .tree_sp_left_02 {
+        z-index: 9998;
+        position: absolute;
+        width: 1157px;
+        height: 3126px;
+        background: url(./images/bg_2_tree_left_02.png) no-repeat left top;
+        top: 1339px;
+        left: -320px;
+    }
+    .tree_sp_right_01 {
+        position: absolute;
+        width: 764px;
+        height: 9215px;
+        background: url(./images/bg_2_tree_right_01.png) no-repeat left top;
+        top: -176px;
+        right: -320px;
+        z-index: 920;
+    }
+    .tree_sp_right_02 {
+        display: none;
+    }
+    .pc-hyokkori-chiikawa {
+        display: block !important;
+        animation: animation-hyokkori-chiikawa .8s linear forwards, shake-chiikawa 2s ease 1s infinite normal none;
+        right: 9px;
+        z-index: 900;
+        position: absolute;
+        width: 216px;
+        height: 259px;
+        background: url(./images/bg_chara_01.png) no-repeat left top;
+        top: 710px;
+    }
+    .bg_sp_chara_chiikawa3 {
+        display: none;
+    }
+    .bg_sp_chara_hachi {
+        display: none;
+    }
+    .bg_sp_chara_hachi {
+        display: none;
+    }
+    .pc-hyokkori-hachiware {
+        animation: animation-hyokkori-hachiware .8s linear forwards, shake-hachiware 2s ease 1s infinite normal none;
+        z-index: 9997;
+        position: absolute;
+        width: 224px;
+        height: 266px;
+        background: url(./images/bg_chara_02.png) no-repeat left top;
+        top: 1418px;
+        display: block !important;
+    }
+
+}
+
+
+
+/* character animation for large screen */
+.pc-hyokkori-chiikawa {
+    display: none;
+}
+.pc-hyokkori-hachiware {
+    display: none;
 }
