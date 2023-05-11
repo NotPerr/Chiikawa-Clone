@@ -1793,6 +1793,20 @@ footer .copyright {
         display: block !important;
     }
 
+    h2 img {
+        width: initial;
+    }
+
+    .info-list {
+        width: 710px;
+        margin: auto;
+        font-size: 16px;
+        line-height: 17px;
+    }
+    .info-list li {
+        padding: 14px 10px 17px;
+    }
+
 }
 
 
