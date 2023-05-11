@@ -1814,6 +1814,13 @@ footer .copyright {
         background: url(./images/tx_intro.png) no-repeat left top/440px 338px;
     }
 
+    .bg_chara_usagi {
+        position: absolute;
+        width: 219px;
+        height: 377px;
+        top: 2247px;
+    }
+
 }
 
 
