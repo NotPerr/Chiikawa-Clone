@@ -1757,7 +1757,7 @@ footer .copyright {
         background: url(./images/bg_2_tree_right_01.png) no-repeat left top;
         top: -176px;
         right: -320px;
-        z-index: 920;
+        z-index: 9996;
     }
     .tree_sp_right_02 {
         display: none;
@@ -1819,6 +1819,29 @@ footer .copyright {
         width: 219px;
         height: 377px;
         top: 2247px;
+    }
+
+    .epi-section {
+        padding: 530px 0 120px;
+        z-index: 9998;
+        position: relative;
+    }
+    .epi-list {
+        width: 710px;
+        
+    }
+    .epi-list li span.epi-number {
+        width: 54px;
+        height: 52px;
+        font-size: 16px;
+        background: url(./images/ic_epi_01.png) no-repeat left top/54px 52px;
+        font-size: 16px;
+        top: -20px;
+        left: -20px;
+        padding-top: 17px;
+    }
+    .epi-list li img {
+        width: 210px;
     }
 
 }
