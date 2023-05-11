@@ -1844,6 +1844,15 @@ footer .copyright {
         width: 210px;
     }
 
+    .bg_chara_momo {
+        width: 352px;
+        height: 279px;
+        background: url(./images/bg_chara_04.png) no-repeat left top;
+        top: 3050px;
+        right: -90px;
+        left: initial;
+    }
+
 }
 
 
