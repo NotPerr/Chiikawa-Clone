@@ -1807,6 +1807,13 @@ footer .copyright {
         padding: 14px 10px 17px;
     }
 
+    .intro-text {
+        width: 440px;
+        height: 338px;
+        margin: auto;
+        background: url(./images/tx_intro.png) no-repeat left top/440px 338px;
+    }
+
 }
 
 
