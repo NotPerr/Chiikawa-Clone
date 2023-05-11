@@ -1951,6 +1951,40 @@ footer .copyright {
         left: -320px;
         z-index: 9996;
     }
+
+    .anime-info-wrap {
+        padding: 45px 0 100px;
+    }
+
+    .anime-tv, .anime-deli {
+        font-size: 19px;
+        width: 770px;
+    }
+    .anime-tv h3 {
+        background: url(./images/ic_anime_01.png) no-repeat left top;
+        background-size: 100%;
+    }
+    .anime-tv .tv-box {
+        width: 668px;
+        height: 62px;
+        background: url(./images/tx_anime_01.png) no-repeat left top/668px 62px;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .anime-deli h3 {
+        background: url(./images/ic_anime_03.png) no-repeat left center;
+        background-size: 100%;
+        
+    }
+    .anime-deli .deli-box {
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 680px;
+        height: 95px;
+        background: url(../images/tx_anime_02_2.png) no-repeat left top/680px 95px;
+    }
     
 
 }
