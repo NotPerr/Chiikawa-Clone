@@ -2059,6 +2059,14 @@ footer .copyright {
         margin-top: 390px;
     }
 
+    .bg_sp_chara_hachi3 {
+        width: 195px;
+        height: 219px;
+        background: url(./images/bg_chara_08.png) no-repeat left top;
+        top: 8512px;
+        right: 96px;
+    }
+
 }
 
 
