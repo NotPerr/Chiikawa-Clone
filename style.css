@@ -1932,9 +1932,6 @@ footer .copyright {
         z-index: 9997;
     }
 
-    .bg_sp_chara_chiikawa2 {
-        display: none;
-    }
 
     .bg_sp_chara_usagi2 {
         width: 255px;
@@ -2047,6 +2044,19 @@ footer .copyright {
     .twitter-wrap {
         height: 505px;
         width: 556px;
+    }
+
+    .bg_sp_chara_chiikawa2 {
+        background: url(./images/bg_chara_07.png) no-repeat left top;
+        top: 7480px;
+        width: 244px;
+        height: 223px;
+        left: 124px;
+        right: initial;
+    }
+
+    .goods-wrap {
+        margin-top: 390px;
     }
 
 }
