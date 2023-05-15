@@ -1985,6 +1985,11 @@ footer .copyright {
         height: 95px;
         background: url(../images/tx_anime_02_2.png) no-repeat left top/680px 95px;
     }
+
+    .goods-list img {
+        width: 500px;
+        height: auto;
+    }
     
 
 }
