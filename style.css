@@ -1593,6 +1593,7 @@ footer .copyright {
     }
     header {
         height: 120px;
+        z-index: 10000;
     }
 
     .menu-btn {
@@ -1865,7 +1866,7 @@ footer .copyright {
     .chara-wrap {
         padding: 350px 0 100px;
         height: 670px;
-        z-index: 9997;
+        z-index: initial;
     }
     .chara-list {
         width: 980px;
@@ -2067,6 +2068,37 @@ footer .copyright {
         right: 96px;
     }
 
+    .meza-wrap {
+        width: 556px;
+        margin-top: 20px;
+    }
+
+    .meza img {
+        width: 263px;
+    }
+
+    .chara-wrap ul {
+        z-index: 9998;
+    }
+
+    .chara-wrap h2{
+        position: relative;
+        z-index: 9999;
+    }
+    .ie_02 {
+        z-index: 9999;
+    }
+
+    .bg_sp_chara_yoroi {
+        background: url(./images/bg_chara_09_sabun.png) no-repeat top -793px left 0;
+        top: 8518px;
+        width: 290px;
+        height: 287px;
+        left: -64px;
+        animation: pc-animation-parapara-yoroi 1.0s steps(2) infinite;
+    }
+
+
 }
 
 
@@ -2102,5 +2134,11 @@ footer .copyright {
 @keyframes pc-animation-parapara-kuri {
     100% {
         background-position: 200% 0px;
+    }
+}
+
+@keyframes pc-animation-parapara-yoroi {
+    100% {
+        background-position: -600px -793px;
     }
 }
