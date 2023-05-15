@@ -2085,6 +2085,11 @@ footer .copyright {
         position: relative;
         z-index: 9999;
     }
+    .chara-btn {
+        position: relative;
+        z-index: 9999;
+    }
+
     .ie_02 {
         z-index: 9999;
     }
@@ -2097,6 +2102,89 @@ footer .copyright {
         left: -64px;
         animation: pc-animation-parapara-yoroi 1.0s steps(2) infinite;
     }
+
+    .footer-wrap {
+        background: initial;
+        background-image: url(./images/bg_foot_01.png);
+        background-position: top center;
+        background-repeat: no-repeat;
+        width: 2560px;
+        padding: 464px 0 40px;
+        font-size: 24px;
+        
+    }
+
+    footer .chara-list {
+        top: 0;
+        left: 32.6%;
+        width: 926px;
+        height: 424px;
+    }
+
+    .foot-chara-01 {
+        width: 307px;
+        height: 342px;
+        background: url(./images/bg_foot_03.png) no-repeat top 0 left 0;
+        margin-top: 82px;
+        animation: pc-animation-parapara-footer-hachi 1.0s steps(2) infinite;
+    }
+    @keyframes pc-animation-parapara-footer-hachi {
+        100% {
+            background-position: -614px 0;
+        }
+    }
+
+    .foot-chara-02 {
+        width: 292px;
+        height: 330px;
+        background: url(./images/bg_foot_chiikawa.png) no-repeat top 0 left 0;
+        margin-top: 94px;
+        animation: pc-animation-parapara-footer-chiikawa 1.0s steps(2) infinite;
+    }
+    @keyframes pc-animation-parapara-footer-chiikawa {
+        100% {
+            background-position: 200% 0;
+        }
+    }
+
+    .foot-chara-03 {
+        width: 325px;
+        height: 424px;
+        background: url(./images/bg_foot_usagi.png) no-repeat top 0 left 0;
+        animation: pc-animation-parapara-footer-usagi 1.0s steps(2) infinite;
+    }
+    @keyframes pc-animation-parapara-footer-usagi {
+        100% {
+            background-position: -648px 0;
+        }
+    }
+
+    .footer-info {
+        margin-top: initial;
+    }
+
+    .footer-sns {
+        width: 250px;
+        margin: 30px auto 50px;
+    }
+    .footer-sns li {
+        width: 60px;
+        height: auto;
+    }
+    .footer-sns li img {
+        width: 60px;
+    }
+
+    footer .copyright {
+        background: url(./images/tx_copy.png) no-repeat;
+        width: 272px;
+        height: 18px;
+    }
+
+    #scroll-top .img-wrap .spear {
+        width: 75px;
+    }
+
 
 
 }
