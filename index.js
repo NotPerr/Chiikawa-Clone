@@ -26,6 +26,7 @@ btn1.addEventListener('click',function() {
   let close_btn = document.getElementById("yt-close-1");
   close_btn.addEventListener('click',function() {
     yt.style.display = 'none';
+    yt_iframe.remove();
   })
 });
 
@@ -41,6 +42,7 @@ btn2.addEventListener('click',function() {
   let close_btn = document.getElementById("yt-close-2");
   close_btn.addEventListener('click',function() {
     yt.style.display = 'none';
+    yt_iframe.remove();
   })
 })
 
@@ -56,6 +58,7 @@ btn3.addEventListener('click',function() {
   let close_btn = document.getElementById("yt-close-3");
   close_btn.addEventListener('click',function() {
     yt.style.display = 'none';
+    yt_iframe.remove();
   })
 })
 
@@ -71,6 +74,7 @@ btn4.addEventListener('click',function() {
   let close_btn = document.getElementById("yt-close-4");
   close_btn.addEventListener('click',function() {
     yt.style.display = 'none';
+    yt_iframe.remove();
   })
 })
 

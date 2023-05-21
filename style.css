@@ -911,7 +911,7 @@ main {
 .youtube-content {
     padding: 230px 0 80px;
     height: 425px;
-    z-index: 915;
+    
     position: relative;
 }
 .youtube-content h2 {
@@ -2119,6 +2119,7 @@ footer .copyright {
         left: 32.6%;
         width: 926px;
         height: 424px;
+        padding-bottom: 0;
     }
 
     .foot-chara-01 {
@@ -2161,6 +2162,7 @@ footer .copyright {
 
     .footer-info {
         margin-top: initial;
+        padding-bottom: 0;
     }
 
     .footer-sns {
@@ -2179,6 +2181,7 @@ footer .copyright {
         background: url(./images/tx_copy.png) no-repeat;
         width: 272px;
         height: 18px;
+        margin: 0;
     }
 
     #scroll-top .img-wrap .spear {
