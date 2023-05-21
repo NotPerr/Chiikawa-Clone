@@ -1576,6 +1576,19 @@ footer .copyright {
 }
 
 
+/* medium screen */
+@media screen and (min-width: 700px) {
+    .loader {
+        left: 40%;
+        top: 35%;
+    }
+    .loader-text-2 {
+        top: 20%;
+        left: 10%;
+    }
+}
+
+
 /* big screen */
 @media screen and (min-width: 1200px) {
     main {
